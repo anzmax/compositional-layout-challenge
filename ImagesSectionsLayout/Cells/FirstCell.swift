@@ -14,10 +14,6 @@ class FirstCell: UICollectionViewCell {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-//    func update(with photo: Photos) {
-//        self.photo.image = photo.image
-        
 }
 
 extension FirstCell {

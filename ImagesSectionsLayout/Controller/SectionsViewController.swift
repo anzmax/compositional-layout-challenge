@@ -21,11 +21,11 @@ class SectionsViewController: UIViewController {
     var firstService = FirstService()
     var secondService = SecondService()
     var thirdService = ThirdService()
-
+    
     var firstPhotos = [FirstPhotos]()
     var secondPhotos = [SecondPhotos]()
     var thirdPhotos = [ThirdPhotos]()
-
+    
     
     var dataSource: UICollectionViewDiffableDataSource<SectionLayoutKind, Int>! = nil
     var collectionView: UICollectionView! = nil
@@ -34,7 +34,6 @@ class SectionsViewController: UIViewController {
         super.viewDidLoad()
         configureHierarchy()
         configureDataSource()
-        //updateSnapshot()        
     }
 }
 

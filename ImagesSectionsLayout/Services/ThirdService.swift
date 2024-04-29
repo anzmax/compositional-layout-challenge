@@ -5,22 +5,14 @@ struct ThirdPhotos: Codable, Hashable {
     var image: String
 }
 
-enum ThirdNetworkError: Error {
-   case emptyUrl
-   case emptyJson
-   case parsingInvalid
-}
-
 class ThirdService {
     
-    //https://apingweb.com/api/rest/646474650dcd163dd2852dafb3fb64db13/Third
-    
-    func fetchThird(completion: @escaping (Result<[ThirdPhotos], ThirdNetworkError>) -> Void) {
+    func fetchThird(completion: @escaping (Result<[ThirdPhotos], NetworkErrors>) -> Void) {
         
         var urlComponents = URLComponents()
         urlComponents.scheme = "https"
-        urlComponents.host = "apingweb.com"
-        urlComponents.path = "/api/rest/646474650dcd163dd2852dafb3fb64db13/Third"
+        urlComponents.host = "mocki.io"
+        urlComponents.path = "/v1/c90014be-9656-485e-9772-24684a35df3d"
         
         guard let url = urlComponents.url else {
             return completion(.failure(.emptyUrl))
@@ -52,6 +44,5 @@ class ThirdService {
             }
             
         }.resume()
-        
     }
 }

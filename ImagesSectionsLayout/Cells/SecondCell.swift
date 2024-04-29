@@ -17,11 +17,6 @@ class SecondCell: UICollectionViewCell {
 }
 
 extension SecondCell {
-    
-//    func update(with photos: Photos) {
-//        photo.image = photos.image
-//    }
-    
     func configure() {
         photo.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(photo)

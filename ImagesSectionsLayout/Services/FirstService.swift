@@ -4,22 +4,17 @@ struct FirstPhotos: Codable, Hashable {
     var image: String
 }
 
-enum FirstNetworkError: Error {
-   case emptyUrl
-   case emptyJson
-   case parsingInvalid
-}
-
 class FirstService {
     
     //https://apingweb.com/api/rest/9833cf035fb0a79c0247bdf9766d2dee27/First
     
-    func fetchFirst(completion: @escaping (Result<[FirstPhotos], FirstNetworkError>) -> Void) {
+    func fetchFirst(completion: @escaping (Result<[FirstPhotos], NetworkErrors>) -> Void) {
         
+        //https://mocki.io/v1/5f87c744-e022-4523-a5ed-6bc3aad3585c
         var urlComponents = URLComponents()
         urlComponents.scheme = "https"
-        urlComponents.host = "apingweb.com"
-        urlComponents.path = "/api/rest/9833cf035fb0a79c0247bdf9766d2dee27/First"
+        urlComponents.host = "mocki.io"
+        urlComponents.path = "/v1/5f87c744-e022-4523-a5ed-6bc3aad3585c"
         
         guard let url = urlComponents.url else {
             return completion(.failure(.emptyUrl))

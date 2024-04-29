@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F41A7DEB2BE0149100EB211B /* NetworkErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41A7DEA2BE0149100EB211B /* NetworkErrors.swift */; };
 		F42120C12AAF5C510056CDC4 /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42120C02AAF5C510056CDC4 /* Layout.swift */; };
 		F42120C32AAF5E370056CDC4 /* Configure.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42120C22AAF5E370056CDC4 /* Configure.swift */; };
 		F42120C62AB0D1980056CDC4 /* FirstService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42120C52AB0D1980056CDC4 /* FirstService.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F41A7DEA2BE0149100EB211B /* NetworkErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrors.swift; sourceTree = "<group>"; };
 		F42120C02AAF5C510056CDC4 /* Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layout.swift; sourceTree = "<group>"; };
 		F42120C22AAF5E370056CDC4 /* Configure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configure.swift; sourceTree = "<group>"; };
 		F42120C52AB0D1980056CDC4 /* FirstService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstService.swift; sourceTree = "<group>"; };
@@ -57,6 +59,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F41A7DE92BE0147200EB211B /* NetworkErrors */ = {
+			isa = PBXGroup;
+			children = (
+				F41A7DEA2BE0149100EB211B /* NetworkErrors.swift */,
+			);
+			path = NetworkErrors;
+			sourceTree = "<group>";
+		};
 		F42120BB2AAF5BB60056CDC4 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +145,7 @@
 				F42120BE2AAF5BF20056CDC4 /* HeaderView */,
 				F42120BF2AAF5C190056CDC4 /* Extensions */,
 				F42120BC2AAF5BC20056CDC4 /* Model */,
+				F41A7DE92BE0147200EB211B /* NetworkErrors */,
 				F42120C42AB0D16E0056CDC4 /* Services */,
 				F49E6D1D2AAF051D00981E47 /* Resources */,
 			);
@@ -235,6 +246,7 @@
 				F49E6D252AAF0D0900981E47 /* Model.swift in Sources */,
 				F49E6D0D2AAF030700981E47 /* SectionsViewController.swift in Sources */,
 				F49E6D092AAF030700981E47 /* AppDelegate.swift in Sources */,
+				F41A7DEB2BE0149100EB211B /* NetworkErrors.swift in Sources */,
 				F49E6D1F2AAF054400981E47 /* FirstCell.swift in Sources */,
 				F42120C32AAF5E370056CDC4 /* Configure.swift in Sources */,
 				F49E6D232AAF055C00981E47 /* ThirdCell.swift in Sources */,

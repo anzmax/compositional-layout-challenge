@@ -84,29 +84,3 @@ extension SectionsViewController {
         return layout
     }
 }
-
-//extension SectionsViewController {
-//
-//    func createLayout() -> UICollectionViewLayout {
-//        let layout = UICollectionViewCompositionalLayout { (sectionIndex: Int, layoutEnvironment: NSCollectionLayoutEnvironment) -> NSCollectionLayoutSection? in
-//            guard let sectionLayoutKind = SectionLayoutKind(rawValue: sectionIndex) else {
-//                return nil
-//            }
-//
-//            let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
-//                                                  heightDimension: .absolute(250))
-//            let item = NSCollectionLayoutItem(layoutSize: itemSize)
-//            item.contentInsets = NSDirectionalEdgeInsets(top: 15, leading: 5, bottom: 15, trailing: 5)
-//
-//            let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.65),
-//                                                   heightDimension: .fractionalHeight(0.25))
-//            let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
-//
-//            let section = NSCollectionLayoutSection(group: group)
-//            section.contentInsets = NSDirectionalEdgeInsets(top: 20, leading: 5, bottom: 20, trailing: 5)
-//            section.orthogonalScrollingBehavior = .continuous
-//            return section
-//        }
-//        return layout
-//    }
-//}

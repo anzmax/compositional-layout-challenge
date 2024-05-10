@@ -10,6 +10,7 @@ This project is my tutorial on using the compositional layout in UICollectionVie
 
 ## Preview
 
-![Compositional Layout Example](https://github.com/anzmax/compositional-layout-challenge/blob/main/1.gif)
+<img src="https://github.com/anzmax/compositional-layout-challenge/blob/main/compositional-layout.gif" alt="Compositional Layout Example" style="width: 300px;"> 
+
 
 This GIF showcases the compositional layout in action, demonstrating the flexibility and dynamic capabilities of collection views in handling various content types.
